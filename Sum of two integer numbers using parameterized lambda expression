@@ -1,0 +1,15 @@
+// Sum of two integer numbers using parameterized lambda expression
+
+
+interface AddNum {
+    public int add_ab(int a, int b); // abstract method with two integer parameters
+}
+
+public class lambdaadd {
+    public static void main(String[] args) 
+	{
+        AddNum add = (a, b) -> a + b; // lambda expression to add two integers
+        int result = add.add_ab(5, 10); // calling the lambda expression with two integers
+        System.out.println("Sum of two numbers is " + result);
+    }
+}
